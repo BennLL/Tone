@@ -20,7 +20,7 @@ class _ResultPageState extends State<ResultPage> {
   List? _result;
 
   void uploadFileToServer() async {
-    var url = '';
+    var url = 'http://13.56.151.69:5000';
     Map<String, String> headers = {
       "connection": "Keep-Alive",
       "Keep-Alive": "timeout=5, max=1000",
