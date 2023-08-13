@@ -19,6 +19,12 @@ class ResultPage extends StatefulWidget {
 class _ResultPageState extends State<ResultPage> {
   List? _result;
 
+  @override
+  void initState() {
+    super.initState();
+    uploadFileToServer();
+  }
+  
   void uploadFileToServer() async {
     var url = 'http://13.56.151.69:5000';
     Map<String, String> headers = {
